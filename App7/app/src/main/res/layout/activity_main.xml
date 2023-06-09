@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/hello1"
+    tools:context=".MainActivity"
+    tools:layout_editor_absoluteX="-1dp"
+    tools:layout_editor_absoluteY="57dp">
+
+    <CheckBox
+        android:id="@+id/cb1"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:text="Decimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <CheckBox
+        android:id="@+id/cb2"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:text="Binary"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.622" />
+
+    <CheckBox
+        android:id="@+id/cb4"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:text="HexaDecimal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.822"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.771" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="255dp"
+        android:layout_height="50dp"
+        android:text="Select Number Format"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.375"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.047" />
+
+    <RadioGroup
+        android:id="@+id/rg"
+        android:layout_width="344dp"
+        android:layout_height="191dp"
+        tools:layout_editor_absoluteX="30dp"
+        tools:layout_editor_absoluteY="73dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.450"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.134" >
+
+        <RadioButton
+            android:id="@+id/rb1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Decimal" />
+
+        <RadioButton
+            android:id="@+id/rb2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Binary" />
+
+        <RadioButton
+            android:id="@+id/rb3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Octal" />
+
+        <RadioButton
+            android:id="@+id/rb4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hexadecimal" />
+
+    </RadioGroup>
+
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="255dp"
+        android:layout_height="45dp"
+        android:text="Enter Number"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.406" />
+
+    <CheckBox
+        android:id="@+id/cb3"
+        android:layout_width="175dp"
+        android:layout_height="60dp"
+        android:text="Octal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.084"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.772" />
+
+    <Button
+        android:id="@+id/b1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="CONVERT"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.133"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.923" />
+
+    <TextView
+        android:id="@+id/t4"
+        android:layout_width="173dp"
+        android:layout_height="113dp"
+        android:text="Result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.861"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.974" />
+
+    <EditText
+        android:id="@+id/e1"
+        android:layout_width="245dp"
+        android:layout_height="43dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.487"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.472" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
